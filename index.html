@@ -8,6 +8,10 @@
 <meta name="description" content="Professional plumbing services including repairs, maintenance, drain cleaning, replacement and installation. Call now for assistance.">
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -18,30 +22,37 @@ body {
 .header {
   background-color: #0b5ed7;
   color: #fff;
-  padding: 30px 20px;
+  padding: 30px 15px;
   text-align: center;
 }
 
 .header h1 {
   margin: 0;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .header p {
-  font-size: 16px;
+  font-size: 15px;
   margin-top: 8px;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  display: block;
 }
 
 .container {
   max-width: 1000px;
   margin: auto;
-  padding: 20px;
+  padding: 20px 15px;
 }
 
 .box {
   background: #ffffff;
-  padding: 25px;
-  margin-bottom: 25px;
+  padding: 22px;
+  margin-bottom: 20px;
   border-radius: 6px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
@@ -65,11 +76,13 @@ body {
 h2 {
   margin-top: 0;
   color: #0b5ed7;
+  font-size: 22px;
 }
 
 .services-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .services-list li {
@@ -86,10 +99,21 @@ h2 {
   font-size: 13px;
   color: #666;
   background: #ffffff;
-  padding: 20px;
-  margin-top: 30px;
+  padding: 20px 15px;
+  margin-top: 25px;
   border-top: 1px solid #ddd;
   line-height: 1.6;
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 24px;
+  }
+  .call-btn {
+    font-size: 20px;
+    padding: 16px;
+  }
 }
 </style>
 </head>
@@ -101,6 +125,8 @@ h2 {
   <p>Reliable assistance for residential plumbing needs</p>
 </div>
 
+<img src="plumbing.jpg" alt="Plumbing services" class="hero-img">
+
 <div class="container">
 
   <div class="box">
@@ -111,27 +137,27 @@ h2 {
     <h2>Our Plumbing Services</h2>
     <ul class="services-list">
       <li>Emergency Plumbing Services</li>
-      <li>Plumbing Repairs and Maintenance</li>
-      <li>Drain Cleaning Services</li>
-      <li>Plumbing Replacement Solutions</li>
-      <li>Plumbing Installation Services</li>
+      <li>Repairs and Maintenance</li>
+      <li>Drain Cleaning</li>
+      <li>Replacement Services</li>
+      <li>Installation Services</li>
     </ul>
   </div>
 
   <div class="box">
     <h2>Service Information</h2>
     <p class="about-text">
-      Company’s plumbing technicians are highly experienced and are able to diagnose and address a wide range of plumbing issues.
-      Services include repair, replacement, and installation of various plumbing systems and components for residential properties.
-      Availability and service offerings may vary by location.
+      Company’s plumbing technicians are highly experienced and handle a wide range of plumbing issues.
+      Services include repair, replacement, and installation of plumbing systems and components.
+      Availability and service scope may vary by location.
     </p>
   </div>
 
   <div class="box">
     <h2>How It Works</h2>
     <p class="about-text">
-      When you call the number listed on this website, your call may be routed to a third-party plumbing service provider.
-      Contractors are independent professionals who determine pricing, availability, and scope of work.
+      Calls placed through this website may be routed to independent third-party service providers.
+      Contractors determine pricing, availability, and scope of work directly with the homeowner.
     </p>
   </div>
 
